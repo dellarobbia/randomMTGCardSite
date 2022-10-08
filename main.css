@@ -7,6 +7,12 @@ html, body, div, span, applet {
     vertical-align: baseline;
     background-color: gainsboro;
 }
-div.header {
-    font-size: 200%;
+.title_section {
+    text-align: center;
+    font-family: 'Alkalami', serif;
+    font-weight: lighter;
+}
+.user_prompt{
+    padding-left: 20;
+    padding-right: 20;
 }
