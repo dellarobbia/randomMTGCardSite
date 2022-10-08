@@ -13,6 +13,15 @@ html, body, div, span, applet {
     font-weight: lighter;
 }
 .user_prompt{
+    text-align: center;
     padding-left: 20;
     padding-right: 20;
+}
+.card_portrait{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Scryfall images are 336*469 */
+    width: 336;
+    height: 469;
 }
