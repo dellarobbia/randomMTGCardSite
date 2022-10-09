@@ -1,6 +1,13 @@
 function main(){
     const image = document.querySelector(".card_portrait");
-    const card = $.getJSON("https://api.scryfall.com/cards/random");
-    //const card = JSON.parse(cardJSON);
-    image.src=card.image_uris.png;
+    
+    jQuery.ajax({
+        url: "https://api.scryfall.com/cards/random",
+        type: "GET",
+        dataType: "json",
+        async: false,
+        success: function(card){
+            image.src=card.image_uris.png;
+        }
+    });
 }
